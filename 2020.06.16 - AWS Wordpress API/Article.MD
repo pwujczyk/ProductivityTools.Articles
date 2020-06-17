@@ -1,11 +1,11 @@
-This article describe how to configure Azure Bitnami Wordpress instance to be able to publish articles using API.
+This article describes how to configure Azure Bitnami Wordpress instance to be able to publish articles using API.
 
-Article describes process using clean version of Bitnami Wordpress
+The article describes the process using a clean version of Bitnami Wordpress
 
 ![Bitnami Wordperss](Images/WordpressBitnami.png)
 
 
-Clean version fo WordPress allow us to retreive posts using api with simple get.
+Clean version fo WordPress allows us to retrieve posts using API with simple get.
 
 ```powershell
 $posts=Invoke-RestMethod -Method GET -Uri http://15.236.123.60/wp-json/wp/v2/posts?per_page=100 -ContentType "application/json" 
@@ -19,7 +19,7 @@ We don't need to provide any credentials. It is working by default.
 
 ![Get posts using API](Images/GetPosts.png)
 
-Unfortunately it is not so easy to publish new post using API. Even if we add authorization information following code will return ``401 Unauthorized``.
+Unfortunately, it is not so easy to publish a new post using API. Even if we add authorization information following code will return ``401 Unauthorized``.
 
 ```powershell
 $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("user:9pnCnk4Oij2K")))
@@ -38,7 +38,7 @@ $newPostAddress="http://15.236.180.138/wp-json/wp/v2/posts"
 #$updatePostAddress="http://15.236.180.138/wp-json/wp/v2/posts/$postid"
 $response=Invoke-RestMethod -Method post -Uri $newPostAddress -ContentType "application/json"  -Headers $header -Body $params1
 ````
-First lets enable simpe user:password authorization. Install **Wordpress REST API Authentication** plugin 
+First let's enable simple user:password authorization. Install **Wordpress REST API Authentication** plugin 
 
 ![Wordpress REST API Authentication](Images/RESTApiPlugin.png)
 
@@ -46,7 +46,7 @@ In plugin configuration chose **Basic Authentication** and **Username:Password**
 
 ![Plugin configuration](Images/PluginConfiguration.png)
 
-Make backup of file **httpd-app** 
+Make a backup of file **httpd-app** 
 ```
 cp /opt/bitnami/apps/wordpress/conf/httpd-app.conf /opt/bitnami/apps/wordpress/conf/httpd-app.conf_bak
 ```
@@ -58,7 +58,7 @@ Edit **httpd-app** file (/opt/bitnami/apps/wordpress/conf/httpd-app). Adding the
 nano /opt/bitnami/apps/wordpress/conf/httpd-app.conf
 ```
 
-I propose to replace content of your file with data provided below.
+I propose to replace the content of your file with the data provided below.
 
 
 ```
@@ -111,11 +111,11 @@ Restart Apache
 sudo /opt/bitnami/ctlscript.sh restart apache
 ```
 
-Now you could expect to be able to post data. Unfortunatelly this at this stage usually it is not working. The missing step is open the **Protected REST APIs** tab. You just need to open it to change some internal plugin configuration. 
+Now you could expect to be able to post data. Unfortunately this at this stage usually it is not working. The missing step is to open the **Protected REST APIs** tab. You just need to open it to change some internal plugin configuration. 
 
 ![Protected REST API tab](Images/ProtectedRESTAPI.png)
 
-After this, step you are able to post data with the code provided above.
+After this, step you can post data with the code provided above.
 
 From now on also if you would like to get information you need to provide user credentials, so code from the beggining should be changed to:
  
