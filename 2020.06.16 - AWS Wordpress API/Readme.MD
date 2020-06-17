@@ -1,3 +1,16 @@
+<!--Category:C#--> 
+ <p align="right">
+    <a href="http://productivitytools.tech/description-attribute-value/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+</p>
+<p align="center">
+    <a href="http://productivitytools.tech/">
+        <img src="Images/Header/LogoTitle_green_500px.png" />
+    </a>
+</p>
+
+
+# Publish post to Wordpress through API
+
 This article describes how to configure Azure Bitnami Wordpress instance to be able to publish articles using API.
 
 The article describes the process using a clean version of Bitnami Wordpress
