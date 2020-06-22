@@ -1,4 +1,4 @@
-<!--Category:C#--> 
+<!--Category:Article--> 
  <p align="right">
     <a href="http://productivitytools.tech/description-attribute-value/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
 </p>
@@ -12,7 +12,7 @@
 # Publish post to Wordpress through API
 
 This article describes how to configure Azure Bitnami Wordpress instance to be able to publish articles using API.
-
+<!--more-->
 The article describes the process using a clean version of Bitnami Wordpress
 
 ![Bitnami Wordperss](Images/WordpressBitnami.png)
@@ -50,9 +50,10 @@ $params1=$params|ConvertTo-Json
 $newPostAddress="http://15.236.180.138/wp-json/wp/v2/posts"
 #$updatePostAddress="http://15.236.180.138/wp-json/wp/v2/posts/$postid"
 $response=Invoke-RestMethod -Method post -Uri $newPostAddress -ContentType "application/json"  -Headers $header -Body $params1
-````
-First let's enable simple user:password authorization. Install **Wordpress REST API Authentication** plugin 
 
+```
+First let's enable simple user:password authorization. Install **Wordpress REST API Authentication** plugin 
+<!--og-image-->
 ![Wordpress REST API Authentication](Images/RESTApiPlugin.png)
 
 In plugin configuration chose **Basic Authentication** and **Username:Password** option. Save configuration.
@@ -74,10 +75,10 @@ nano /opt/bitnami/apps/wordpress/conf/httpd-app.conf
 I propose to replace the content of your file with the data provided below.
 
 
-```
+```powershell
 <IfDefine USE_PHP_FPM>
-    <Proxy "unix:/opt/bitnami/php/var/run/wordpress.sock|fcgi://wordpress-fpm" timeout=300>
-    </Proxy>
+	<Proxy "unix:/opt/bitnami/php/var/run/wordpress.sock|fcgi://wordpress-fpm" timeout=300>
+	</Proxy>
 </IfDefine>
 
 <Directory "/opt/bitnami/apps/wordpress/htdocs">
