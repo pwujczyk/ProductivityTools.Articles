@@ -17,10 +17,22 @@ I am not sure exactly which plugins are needed, but I have following installed
 - Pipeline
 
 ### Definition in code repository
-Jenkins allow to build CI definition in different ways. The most trendy way of writing scripts is to use **Pipeline script** and the best way is to keep this pipeline in repository. For sure it project repository is the obvious choice.
+Jenkins allow to build CI definition in different ways. Current most popular approach is to use **Pipeline** project with the Jenkinsfile which contains CI definition.
+
+### Project Type 
+To use Jenkinsfile chose **Pipeline** project type
+
+![Pipeline script from SCM](Images/PipelineType.png)
+
+#### Jenkins pipeline configuration
+
+In the Pipeline chose **Pipeline script from SCM** and fill couple fields as showed on the picture below. From this point you can invoke job on jenkins and job should download jenkins file, and perform actions in the pipeline file.
+
+![Pipeline script from SCM](Images/PipelineFromSCM.png)
+
 
 #### Jenkins file
-It contains build definition. Three example steps below. This is pretty simple. One of my full jenkins file is [here](https://github.com/pwujczyk/ProductivityTools.IdentityServer/blob/master/Jenkinsfile). Put file in the main directory of your project repository.
+It contains build definition. Three example steps below. This is pretty simple. One of my full jenkins file is [here](https://github.com/pwujczyk/ProductivityTools.IdentityServer/blob/master/Jenkinsfile). Put file (jenkinsfile without extension) in the main directory of your project repository.
 
 ```
 pipeline {
@@ -29,7 +41,6 @@ pipeline {
     stages {
         stage('hello') {
             steps {
-                // Get some code from a GitHub repository
                 echo 'hello'
             }
         }
@@ -42,7 +53,6 @@ pipeline {
         }
         stage('byebye') {
             steps {
-                // Get some code from a GitHub repository
                 echo 'byebye'
             }
         }
@@ -50,15 +60,12 @@ pipeline {
 }
 
 ```
-#### Jenkins pipeline configuration
-
-In the Pipeline chose **Pipeline script from SCM** and fill couple fields as showed on the picture below. From this point you can invoke job on jenkins and job should download jenkins file, and perform actions in the pipeline file.
-
-![Pipeline script from SCM](Images/PipelineFromSCM.png)
 
 #### Github push
 
 In your project configuration you should add webhook. The address should be your jenkins address followed by */github-webhook/*. Of course you need to have server available from Internet. On the example below I forwarded 8080 port from my router to internal network. 
+
+https://productivitytools.tech:8080/github-webhook/
 
 ![Webhook](Images/webhook.png).
 
