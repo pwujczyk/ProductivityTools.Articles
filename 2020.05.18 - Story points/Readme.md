@@ -1,12 +1,14 @@
 <!--Category:Article--> 
  <p align="right">
     <a href="http://http://productivitytools.tech/hello-decorator-how-long-does-it-take-to-paint-my-flat-lets-me-think-about-15-strawberries//"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+           <a href="https://github.com/pwujczyk/ProductivityTools.Articles"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
     <a href="http://productivitytools.tech/">
         <img src="Images/Header/LogoTitle_green_500px.png" />
     </a>
 </p>
+>
 
 # Hello decorator, how long does it take to paint my flat? - Let’s me think, about 15 strawberries.
 
