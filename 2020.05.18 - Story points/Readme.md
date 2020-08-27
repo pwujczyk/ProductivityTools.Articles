@@ -10,7 +10,7 @@
 </p>
 
 
-# Hello decorator, how long does it take to paint my flat? - Let’s me think, about 15 strawberries.
+# Hello decorator, how long does it take to paint my flat?  Let me think, about 15 strawberries.
 
 ![](Images/strawberries.jpg)
 
