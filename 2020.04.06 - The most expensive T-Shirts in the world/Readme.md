@@ -30,6 +30,7 @@ This is a variation of the General size approach, but with different names. For 
 ## Time team estimation
 
 The most concrete method which answers (which is not accurate often) when the task will be finished. The answer could be done on different levels, with different precision. It could be done after a couple of meetings with the team, which is similar to General size estimation, but it also can be done after many workshops. Then estimation is much closer to the final execution time. Developers during those meetings split all functionality into small tasks and estimate them separately. The more graduality, the more accurate estimation will be, but also the more time is needed to give numbers. 
+
 The approach is used for small projects, and change requests. Also, it is used when the team is working on the contract agreement when all delay will be their cost.
 
 ## Story points team estimation
