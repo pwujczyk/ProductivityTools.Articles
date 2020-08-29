@@ -27,12 +27,11 @@ In scrum, we have two major roles and one additional which should disappear when
 
 ![Team structure](Images/Team.png)
 
-
 ## Scrum simplification in a complex world
 On the paper Scrum assumptions seem valid and rational, in reality unfortunately usually they don’t.
 
 ### Product owners
-In nowadays complex solutions, it is super difficult to point single product owner. Applications or part of them doesn’t have one person who is responsible for it, nor have full knowledge about it. So companies are trying to fit in some way to the methodology choosing group of people and saying that this is the “product owner body” and they together will decide. This break whole concept as if we have two people in charge, then most of the decisions need to be validated with both. Each person has different knowledge and often different opinion.
+In nowadays complex solutions, it is super difficult to point single product owner. Applications or part of them doesn’t have one person who is responsible for it, nor have full knowledge about it. So companies are trying to fit in some way to the methodology choosing group of people and saying that this is the 'product owner body' and they together will decide. This break whole concept as if we have two people in charge, then most of the decisions need to be validated with both. Each person has different knowledge and often different opinion.
 
 In scrum, we should also have one product owner assigned to a team, but this is rarely possible. Nowadays we have more demand for developers than supply. So it is very common that every year in the IT/Business department special event is organized during which major projects are chosen and only those will be done during the next months. This IT manpower assignment results in changing the product owner for the team. So developers are more like contractors who are working on one business area this year and on different next year. 
 
@@ -51,3 +50,9 @@ Scrum is also assuming that all team members are equal and those group of people
 ## Summary
 
 Scrum is a great framework I read books that it had worked in a couple of great companies that have the best people in the market. I tried to implement Scrum team organization already tree times and each company has their restrictions which don’t allow to make it pure. Still, Scrum had other great parts like ceremonies and working principles which are very good and in my opinion, just the team is difficult to set up according to the rules. 
+
+
+
+
+
+
