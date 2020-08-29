@@ -1,6 +1,7 @@
 <!--Category:Article--> 
  <p align="right">
-    <a href="http://productivitytools.tech/description-attribute-value/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+    <a href="http://productivitytools.tech/does-the-scrum-team-really-exist/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+           <a href="https://github.com/pwujczyk/ProductivityTools.Articles"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
     <a href="http://productivitytools.tech/">
@@ -9,7 +10,7 @@
 </p>
 
 
-# Does the scrum team really exist
+# Does the scrum team really exist?
 
 ![](Images/Workplace.jpg)
 
