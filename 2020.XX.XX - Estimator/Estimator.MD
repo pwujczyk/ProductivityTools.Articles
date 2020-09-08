@@ -32,6 +32,7 @@ For each category, we are setting up 3 complexity levels: simple, medium, and co
 
 Next, we create a table that will help us summarize the effort. We should have the same categories and complexity. 
 We take a business requirement and add rows in our table. Filling the crossing cells with a number of changes.
+
 ![Simple solution](Images/ComplexityEstimation.png)
 
 Let's analyze the example below: we are thinking that adding a picture to our application will require one simple change in the web application one medium in the web API and one medium change in the database.
