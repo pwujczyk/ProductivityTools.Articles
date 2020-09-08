@@ -1,6 +1,6 @@
-Rocket booster separation
+![Simple solution](Images/rocket.jpg)
 
-Send rocket into space in parts - how to estimate large projects?
+# Send rocket into space in parts - how to estimate large projects?
 
 The job posters are full of requests for agile, scrum coaches. Now every manager, team lead position in the job poster has information about agile. Current trend is now very clear. We are trying to deliver software in small steps. We took functionality tear it apart into smallest user stories possible and finish one by one. IT commits only to the work planned for the next two weeks. 
 
