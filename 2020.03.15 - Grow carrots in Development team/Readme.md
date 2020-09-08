@@ -71,7 +71,7 @@ Delivery of the functionality can take a couple of days or even a couple of mont
 
 The process continues until all tasks in a given functionality will be finished. All actions overlap so when one functionality is tested another is created at the same time.
 
-![Development process](Images\process.png)         
+![Development process](Images/process.png)         
              
 When all requirements are implemented and tested, functionality is treated as finished, and we can share it with end-users.
 
