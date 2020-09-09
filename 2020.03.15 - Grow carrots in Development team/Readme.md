@@ -75,6 +75,6 @@ The process continues until all tasks in a given functionality will be finished.
              
 When all requirements are implemented and tested, functionality is treated as finished, and we can share it with end-users.
 
-## ## You grow carrots so probably you also can set up a printer?
+## You grow carrots so probably you also can set up a printer?
 
 Usually, we know how things around us are made. We have basic knowledge of how houses are built, we know how food is cooked, we know how our cars are assembled. It will be also good to have a very basic idea of how applications which currently are around us build.
