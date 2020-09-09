@@ -8,18 +8,22 @@
         <img src="Images/Header/LogoTitle_green_500px.png" />
     </a>
 </p>
-<!--og-image-->
-![Simple solution](Images/rocket.jpg)
+
+
 
 # Send rocket into space in parts - how to estimate large projects?
+
+<!--og-image-->
+![](Images/rocket.jpg)
 
 The job posters are full of requests for agile, scrum coaches. Now every manager, team lead position in a job description has information about agile. The current trend is very clear. We are trying to deliver software in small steps. We took functionality, tear it apart into the smallest user stories possible and finish one by one. IT commits only to the work planned for the next two weeks.  
 
 This approach is working. Business sees how developers deliver software. IT is predictable and everyone is happy. 
 
-### ...Until something bigger happens
+#### Until something bigger happens
 <!--more-->
 You could be requested for managing a project which is much greater than you usually do and additionally you are asked to answer for a simple question: how much it will cost? 
+
 Your current agile methods are not working anymore. You cannot analyze the solution and write the exact method names for every task. You think that need to perform one hundred sessions of estimations in one week to give final number.
 
 ## Estimator
@@ -28,8 +32,11 @@ To meet your estimation deadline you need to use a different tool. The estimator
 
 Having a simple solution we could differentiate at least four categories
 - WebApplication
+
 - WebApi
+
 - Database
+
 - Background jobs
 
 
@@ -60,7 +67,11 @@ In our simple example, we estimate 19 MD of development cost. It is far from per
 ## More advanced estimator
 
 In the real situation we should take more variables into considerations:
+
 - In the example we estimated only development, probably you would like to estimate also the QA, DevOps, Management, Analyst work. Those are different categories
+
 - To have more flexibility you could use an additional level of estimation which is reuse. So you could have complex change but you will reuse it from the previous change. Than estimator will reflect more reality
+
 - The estimator is used to give a number in a fast way. By rule, it is not very accurate. You should add a contingency to be sure that you will have time to finish tasks. I saw 20% as an additional time buffer
+
 - An estimator should contain more information about change like area, category, item description. If it will be missing this the next week we won't remember what it was about
