@@ -1,14 +1,14 @@
 <!--Category:Article--> 
  <p align="right">
-    <a href="http://productivitytools.tech/hello-decorator-how-long-does-it-take-to-paint-my-flat-lets-me-think-about-15-strawberries/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
-           <a href="https://github.com/pwujczyk/ProductivityTools.Articles"><img src="Images/Header/Github_border_40px.png" /></a>
+    <a href="http://productivitytools.tech/send-rocket-into-space-in-parts-how-to-estimate-large-projects/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+    <a href="https://github.com/pwujczyk/ProductivityTools.Articles"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
     <a href="http://productivitytools.tech/">
         <img src="Images/Header/LogoTitle_green_500px.png" />
     </a>
 </p>
-
+<!--og-image-->
 ![Simple solution](Images/rocket.jpg)
 
 # Send rocket into space in parts - how to estimate large projects?
@@ -18,7 +18,7 @@ The job posters are full of requests for agile, scrum coaches. Now every manager
 This approach is working. Business sees how developers deliver software. IT is predictable and everyone is happy. 
 
 ### ...Until something bigger happens
-
+<!--more-->
 You could be requested for managing a project which is much greater than you usually do and additionally you are asked to answer for a simple question: how much it will cost? 
 Your current agile methods are not working anymore. You cannot analyze the solution and write the exact method names for every task. You think that need to perform one hundred sessions of estimations in one week to give final number.
 
