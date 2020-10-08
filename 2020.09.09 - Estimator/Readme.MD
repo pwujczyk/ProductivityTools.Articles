@@ -11,7 +11,7 @@
 
 
 
-# Send rocket into space in parts - how to estimate large projects?
+# Send rocket into space in parts. How to estimate large projects?
 
 <!--og-image-->
 ![](Images/rocket.jpg)
