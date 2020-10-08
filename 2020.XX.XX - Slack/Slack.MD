@@ -62,11 +62,25 @@ After checking I could 'star' the message and I am doing it, but later I have st
 
 
 ## Conversation message exchange aka low culture of writing
+
 Slack is chat, very fast and efficient. So why I should write exactly what I need from given person, add pictures and describe exactly what I am expecting. I will throw only a short request, and if he won't understood it he will ask. Unfortunately usually no one understood.
 ![Thread](Images/Smyczki.jpg)
 
 ## Memes everywhere
 
+For some time more and more people used memes. In slack it is so easily that for some of the users after writing their name slack adds custom image every time. So Conversation is looking like message, "funny" meme, addidional message, again this funny meme. 
+
+What is more people started to express themselves with pictures. It is something wrong? Maybe not, but I feel that sometimes I am talking with teenagers. 
+
+![Thread](Images/DealWithIt.jpg)
+
+## Emoticons
+
+If you would like to share some information, which should target to wider audience, it is good and expected by others to use as much emoticons  as possible. Than it means that you care and your message is more happy than just simple text . This also invites others to put a lot of different emoticons  under your message .
+We are cool  and happy  family, where it is more important to put some heart  into the message than content. (edited) 
+
+
+![Thread](Images/Slack.png)
 
 ## Too easy to post
 It is so easy to write on Slack, that all just throw important information there. During last covid-remote-war-room everyone was putting important information there, message, comments, diagrams, links. It was like inside no relational database - chaos. 
