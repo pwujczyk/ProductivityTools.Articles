@@ -10,8 +10,10 @@ Every company uses different ways of communication. Usually, we have:
 
 Mostly also we are using them for different purposes. What is happening when Chat takes everything? It is an interesting experience, it has a lot of advantages, but also a lot of things which are difficult to manage. Lets review a couple of the difficult ones.
 
+In EcoVadis we are using Slack as our main communication tool. Let us review it and compare it to the e-mail.
+
 ## Prod issue between pancakes and hot-dogs
-In Slack, we have channels. Unusually each team has its own, we have a general channel, team-to-team channel, and so on. The funny part is that some channels are not 'topic related' but more 'people related'. For example the team channel. This means that you are sharing their information, where will you go for lunch, as also that your module on production is not working. 
+In Slack, we have channels. Unusually each team has its own, we have a general channel, team-to-team channel, and so on. The funny part is that some channels are not 'topic related' but more 'people related'. For example the team channel. This means that you are sharing  information, where will you go for lunch, as also that your module on production is not working. 
 
 Unfortunately, you need to be up to date with all dishes which bring your team to the office.
 ![Prod issue between panckages and hot-dogs](Images/DogWithAnanas.png)
@@ -84,8 +86,7 @@ What is more, people started to express themselves with pictures. It is somethin
 ## Emoticons
 
 If you would like to share some information, which should target a wider audience, it is good and expected by others to use as many emoticons as possible. Then it means that you care and your message is happier than just simple text. This also invites others to put a lot of different emoticons under your message.
-We are a cool and happy family, where it is more important to put some heart into the message than content. (edited) 
-
+We are a cool and happy family, where it is more important to put some heart into the message than content. 
 
 ![Thread](Images/Slack.png)
 
