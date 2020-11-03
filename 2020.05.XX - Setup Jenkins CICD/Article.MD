@@ -103,3 +103,8 @@ pipeline {
 }
 
 ```
+
+
+## Bitbucket
+
+Install **Bitbucket Push and Pull Request** plugin https://plugins.jenkins.io/bitbucket-push-and-pull-request/

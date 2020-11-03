@@ -9,12 +9,12 @@
     </a>
 </p>
 
-![](Images/Title.jpg)
-
 # Grow carrots in Development team
 
-Every time visitors (employees from other sites) come to the Warsaw office they are guided through open space to better get to know coworkers.  Once, one of my colleagues from the different departments had a guest. Of course, the standard round was made and when she stopped ahead of development teams, she introduced us and, at the moment, asked the question: 
+![](Images/Title.jpg)
 
+Every time visitors (employees from other sites) come to the Warsaw office they are guided through open space to better get to know coworkers.  Once, one of my colleagues from the different departments had a guest. Of course, the standard round was made and when she stopped ahead of development teams, she introduced us and, at the moment, asked the question: 
+<!--more-->
 - And those are developers. So, Pawel what are you actually do?
 
 As we know each other for some time, the question shocked me a lot. I cannot imagine she doesn’t know anything about my teamwork. I answered:
@@ -40,7 +40,7 @@ Of course, nothing is easy. During the analysis we are asking questions like:
 - How autocomplete should look like?
 - And others…
 
-When all questions will be answered and visualization of the screens will be prepared, "developers" can start working.  It means that the development team takes functional specification, graphics, and split feature into small tasks which can be distributed across team members. 
+When all questions will be answered and visualization of the screens will be prepared, 'developers' can start working.  It means that the development team takes functional specification, graphics, and split feature into small tasks which can be distributed across team members. 
 
 Developers is a very general term. Usually, development teams consist of:
 

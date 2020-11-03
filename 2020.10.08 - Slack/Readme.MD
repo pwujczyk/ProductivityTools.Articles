@@ -1,6 +1,18 @@
-![TopGun](Images/topgun.jpg)
+<!--Category:Article--> 
+ <p align="right">
+    <a href="http://productivitytools.tech/send-rocket-into-space-in-parts-how-to-estimate-large-projects/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+    <a href="https://github.com/pwujczyk/ProductivityTools.Articles"><img src="Images/Header/Github_border_40px.png" /></a>
+</p>
+<p align="center">
+    <a href="http://productivitytools.tech/">
+        <img src='Images/Header/LogoTitle_green_500px.png' />
+    </a>
+</p>
 
 # Working with only with slack is possible but only for the best
+
+<!--og-image-->
+![](Images/topgun.jpg)
 
 Every company uses different ways of communication. Usually, we have:
 - Phone
@@ -11,6 +23,7 @@ Every company uses different ways of communication. Usually, we have:
 Mostly also we are using them for different purposes. What is happening when Chat takes everything? It is an interesting experience, it has a lot of advantages, but also a lot of things which are difficult to manage. Lets review a couple of the difficult ones.
 
 In EcoVadis we are using Slack as our main communication tool. Let us review it and compare it to the e-mail.
+<!--more-->
 
 ## Prod issue between pancakes and hot-dogs
 In Slack, we have channels. Unusually each team has its own, we have a general channel, team-to-team channel, and so on. The funny part is that some channels are not 'topic related' but more 'people related'. For example the team channel. This means that you are sharing  information, where will you go for lunch, as also that your module on production is not working. 
@@ -21,7 +34,7 @@ Unfortunately, you need to be up to date with all dishes which bring your team t
 ## Deals
 E-mail is treated as a document. Often in e-mail results from discussions are sent. It is treated as a deal. We can save it, print it, mark it with some color, move to *deals* folder. Basically, we have a document that will allow us to prove that something was established between parties.
 
-In Sack, everything is the conversation we could make arrangments during that, but it is extra difficult to save it for the future. You can keep this conversation open, but then in one month, you will have like thousands of open conversations that are not active anymore. Or worse if you will start the conversation again with the same people, your arrangement, will go somewhere up, which will make it much difficult to find
+In Sack, everything is the conversation we could make arrangements during that, but it is extra difficult to save it for the future. You can keep this conversation open, but then in one month, you will have like thousands of open conversations that are not active anymore. Or worse if you will start the conversation again with the same people, your arrangement, will go somewhere up, which will make it much difficult to find
 
 Other options are to open channels for every 'deal-converstion', but people are not doing it. Also, this doesn't resolve an issue with hundreds of channels
 
@@ -77,7 +90,7 @@ Slack is chat, very fast and efficient. So why I should write exactly what I nee
 
 ## Memes everywhere
 
-For some time more and more people used memes. In slack, it is so easy that for some of the users after writing their name slack adds a custom image every time. So Conversation is looking like the message, "funny" meme, additional message, again this funny meme. 
+For some time more and more people used memes. In slack, it is so easy that for some of the users after writing their name slack adds a custom image every time. So Conversation is looking like the message, 'funny' meme, additional message, again this funny meme. 
 
 What is more, people started to express themselves with pictures. It is something wrong? Maybe not, but I feel that sometimes I am talking with teenagers. 
 
@@ -95,6 +108,6 @@ It is so easy to write on Slack, that all just throw important information there
 
 ![Thread](Images/Nike.jpg)
 
-# Let's chat!
+## Let's chat!
 
 Slack and chat are great it can be a live saver. Is has a web, desktop, and mobile app. But let's remember that we need to use the tool in the scenarios for which it was designed not for all situations in which it can be used. It is not always fit. 

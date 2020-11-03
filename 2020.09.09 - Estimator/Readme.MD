@@ -9,8 +9,6 @@
     </a>
 </p>
 
-
-
 # Send rocket into space in parts. How to estimate large projects?
 
 <!--og-image-->
