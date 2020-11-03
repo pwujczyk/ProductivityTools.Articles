@@ -16,8 +16,10 @@
 ![](Images/WideScreen.png)
 
 To deliver software, the team needs to be organized. Every team is different and each leader will be managing team individually. From my experience, I think a couple of things are more important than others.
+<!--more-->
 
 *So if you would like to do only one thing in your team:*
+
 
 ## Describe what needs to be done
 
@@ -35,10 +37,10 @@ Everyone likes to mark something done. Little successes are important if we will
 
 Also during the splitting of the tasks additional ideas, questions - will occur. Work will be more organized, as more details of the functionality will be added.
 
-*If you did those two in your team it is already good. Those changes are not something which can be introduced in one week. If you would like to push it further:*
-
 
 ![](Images/Scissors.jpg)
+
+*If you did those two in your team it is already good. Those changes are not something which can be introduced in one week. If you would like to push it further:*
 
 
 ## Test just after development
@@ -47,9 +49,9 @@ Small tasks are great, still, it is important to test them on the environment ju
 
 For different companies, different percentage of bugs will be found, but for sure they will be. If functionality will be tested just after work developer still has the whole code in his memory (brain) and will fix it much faster than in two days.
 
-*If you are at this stage, development should go pretty smoothly. If you would like to introduce the fourth improvement*
-
 ![](Images/VAR.jpg)
+
+*If you are at this stage, development should go pretty smoothly. If you would like to introduce the fourth improvement*
 
 
 ## Measure developers work
