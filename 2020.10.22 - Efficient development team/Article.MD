@@ -31,11 +31,11 @@ This is also a very important point in all methodologies. Waterfall - structured
 
 ## Split functionalities into smallest chunk possible
 
-Everyone likes to mark something done. Little successes are important if we will finish 10 small tasks we will be happier than if we will finish only half of the big task. 
+Everyone likes to mark something done. Little successes are important if we will finish 10 small tasks we will be happier than if we will finish only half of the one big task. 
 
-Also during the splitting of the tasks additional ideas, questions will occur. Work will be more organized, as more details of the functionality will be added.
+Also during the splitting of the tasks additional ideas, questions - will occur. Work will be more organized, as more details of the functionality will be added.
 
-If you did those two in your team it is already good. Those changes are not something which can be introduced in one week. If you would like to push it further:
+*If you did those two in your team it is already good. Those changes are not something which can be introduced in one week. If you would like to push it further:*
 
 
 ![](Images/Scissors.jpg)
@@ -47,7 +47,7 @@ Small tasks are great, still, it is important to test them on the environment ju
 
 For different companies, different percentage of bugs will be found, but for sure they will be. If functionality will be tested just after work developer still has the whole code in his memory (brain) and will fix it much faster than in two days.
 
-If you are at this stage, development should go pretty smoothly. If you would like to introduce the fourth improvement
+*If you are at this stage, development should go pretty smoothly. If you would like to introduce the fourth improvement*
 
 ![](Images/VAR.jpg)
 
@@ -58,9 +58,9 @@ Each developer needs to know how much his work costs. When you will start estima
 
 Knowledge about the cost of work allows the whole team to make many accurate estimations and this is not important for business this is important for the team. It is much better to estimate something for 4 hours and finish it in 3 or even 5. Then to estimate something to one hour and did it in 5. Correct estimations give more satisfaction for the employees
 
-![](Images/Bolt.jpg)
+![](Images/Bolt.png)
 
-Knowing how much work cost it is a level that a lot of developers will never achieve. Let us do another step.
+*Knowing how much work cost it is a level that a lot of developers will never achieve. Let us do another step.*
 
 ## Implement traceability
 
@@ -69,9 +69,11 @@ Who did this fix? How much cost whole functionality not only one task. How much 
 Traceability is very often provided by tools. Jira, Azure DevOps gives you a lot of data. Still, you need to learn how to use it. Start by asking yourself the questions above. Can you answer them? But please do not estimate. At this point, you need to know exactly. Who, when, and for how long. You need to have it because you should present it to the team and say
 - This sprint we spend 40 hours fixing bugs from the previous release
 - No way, we did something but for sure not 40 hours
-- Please look this is a data
+- Please look, everything is here
 
 ![](Images/Snow.jpg)
+
+*Next thing is to try to improve*
 
 ## Retrospective
 
@@ -79,7 +81,7 @@ Your developers are working, they know what to do they estimating the work, mayb
 
 ![](Images/BackToTheFuture.jpg)
 
-Your team is self-improving, they are deciding what to do and how. What next?
+*Your team is self-improving, they are deciding what to do and how. What next?*
 
 ## Write procedures
 
@@ -87,9 +89,11 @@ As more topics you will have during the retrospective, more establishments will 
 
 Sometimes I hear, we are not writing those things. If we decide something and it will catch up it is ok, if not we are trying something different. I have another opinion, employees decide, but we are people, we forget we sometimes do something wrong. I am trying not to loos minutes of brainstorming with the team. If they decide something, let us try to do it. If we haven't succeeded during the first-week lets try again. 
 
+To remember all of this we can write procedures that we should do in a particular situation. Meeting notes also will work. 
+
+
 ![](Images/Doctor.jpg)
 
-To remember all of this we can write procedures that we should do in a particular situation. Meeting notes also will work. 
 
 ## What next? Try not to be bored
 
