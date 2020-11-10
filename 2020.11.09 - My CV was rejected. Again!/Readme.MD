@@ -39,7 +39,7 @@ customers in the financial sector.*
 
 If I don't find this intro, I need to make it myself looking into the experience, calculating years and so on. Of course I will do it, but I think it is better if candidate will write what he would like me to focus on the most.
 
-![People](Images/summary.jpeg)
+![People](Images/Summary.jpeg)
 
 ## Skill list 
 
