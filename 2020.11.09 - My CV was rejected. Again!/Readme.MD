@@ -53,7 +53,12 @@ This is very often the first thing which I checking. If somebody put link to ext
 
 ![People](Images/ExternalLinks.png)
 
+### Github
+
+This is the most important external link from whole CV. If somebody puts it I am always reviewing the code. Unfortunately often link is present, but only couple commits through last year was done. What does it mean? Candidate is trying but doesn't have time? 
+
 ![People](Images/Github.png)
+
 ### Github
 ### LinkedIn
 ### StackOverflow
