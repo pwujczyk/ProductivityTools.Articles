@@ -59,10 +59,6 @@ This is the most important external link from whole CV. If somebody puts it I am
 
 ![People](Images/Github.png)
 
-### Github
-### LinkedIn
-### StackOverflow
-### Pages
 
 ## Certifications
 
@@ -75,4 +71,6 @@ On the other hand I had one candidate who had 10 certificates from SQL and he di
 ## Design 
 
 I am looking for developer not graphics designer. But still if CV is nice it is easier for me to read it. When I receive document written in small consolas without proper spacing, I will still reviewed but I will be not sure if I should invite candidate or not I will probably resign. 
+
+![People](Images/Design.png)
 
