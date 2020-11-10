@@ -74,3 +74,14 @@ I am looking for developer not graphics designer the CV won't be showed in the g
 
 ![People](Images/Design.png)
 
+# Experience
+
+Experience is so low? Yes. Because it is the longest part of the CV. It allows to go into details about the candidate. Company names are important. Currently I have some knowledge what is done in a lot of companies in my city. I know what kind of issues they have. Very often this helps candidate as couple years in big company will result in different experience than couple in startup. 
+
+![People](Images/Warsaw.jpg)
+
+# Additional information
+
+To be honest. I am not focusing on availability on hobby and other staff. Hiring is so time consuming that I can wait for candidate 3 months, also during the interview we have so much topics to discuss that very rare we have a time to discuss about hiking. 
+
+![People](Images/Hiking.jpeg)
