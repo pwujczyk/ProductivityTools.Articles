@@ -70,7 +70,7 @@ On the other hand I had one candidate who had 10 certificates from SQL and he di
 
 ## Design 
 
-I am looking for developer not graphics designer. But still if CV is nice it is easier for me to read it. When I receive document written in small consolas without proper spacing, I will still reviewed but I will be not sure if I should invite candidate or not I will probably resign. 
+I am looking for developer not graphics designer the CV won't be showed in the gallery in Luwr. But still if CV is nice it is easier for me to read it. When I receive document written in small consolas without proper spacing, It is much difficult to reviewed it. If will be not sure if I should invite candidate or not CV design should be this last element which help me decide.
 
 ![People](Images/Design.png)
 
