@@ -1,7 +1,7 @@
 
 <!--Category:Article--> 
  <p align="right">
-    <a href="http://productivitytools.tech/send-rocket-into-space-in-parts-how-to-estimate-large-projects/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+    <a href="http://productivitytools.tech/oauth-clientcredentials/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
     <a href="https://github.com/pwujczyk/ProductivityTools.Articles"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
@@ -15,7 +15,7 @@
 <!--og-image-->
 ![](Images/OAuth.png)
 
-Adding OAuth to the application is decribed on multiple sites, but I am missing very simple tutorial without explaining flows. 
+Adding OAuth to the application is described on multiple sites, but I am missing a very simple tutorial without explaining flows. 
 
 For application to application communication we are using **Client Credentials** flow.
 
@@ -24,7 +24,7 @@ For application to application communication we are using **Client Credentials**
 
 ## Identity server
 
-First we need to add Api definition"
+First, we need to add API definition"
 
 ```C#
 
@@ -33,7 +33,7 @@ public static IEnumerable<ApiResource> Apis => new List<ApiResource>
     new ApiResource("GetTask3.API", "API for GetTask3 Application")
 };
 ```
-Next we need to add client, and add in the scope, value defined earlier.
+Next, we need to add the client and add in the scope, the value defined earlier.
 
 ```c#
 new Client
@@ -50,7 +50,7 @@ new Client
 
 ## Application
 
-Now lets test if the communication between aplications is working. Then let's break it and repair.
+Now let's test if the communication between applications is working. Then let's break it and repair it.
 
 ### Package needed
 ```
@@ -72,7 +72,7 @@ services.AddAuthentication(options =>
     });
 ```
 
-Be sure that you have following middlewares in the Configure method (order is important)
+Be sure that you have the following middlewares in the Configure method (order is important)
 
 ```C#
 app.UseAuthentication();
@@ -111,7 +111,7 @@ public ElementView GetTasks([FromBody]ListRequest request = null)
 }
 ```
 
-After this operation you should receive 401 when calling endpoint
+After this operation, you should receive 401 when calling the endpoint
 
 ![](Images/401.png)
 
@@ -120,7 +120,7 @@ After this operation you should receive 401 when calling endpoint
 Required packages
 - IdentityModel
 
-We need to send token with each request. To generate we need to call Identity Server.
+We need to send the token with each request. To generate we need to call Identity Server.
 
 ```c#
 private string token;
@@ -159,10 +159,10 @@ private string Token
     }
 ```
 
-Last step is to add Bearer token before calling the endpoint
+The last step is to add a Bearer token before calling the endpoint
 
 ```c#
 client.SetBearerToken(Token);
 ```
 
-After those steps application should call service again without issues.
+After those steps application should call the service again without issues.
