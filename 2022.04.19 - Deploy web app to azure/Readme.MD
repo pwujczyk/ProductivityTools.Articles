@@ -118,7 +118,8 @@ az storage blob upload-batch — account-name STORAGE_ACCOUNT_NAME
  account-key STORAGE_ACCOUNT_KEY — destination ‘$web’ — source ./
 
 Example: az storage blob upload-batch --account-name meetingsweb
- --account-key XPq3uhvz+MvocsOcqa/nqViLsWgcCBdgwPTQvP7NWwV/O+iu2Fhn7KMCpawuRBizkaU3+/4OMaxiLzKBxTZw== --destination '$web' --source ./
+ --account-key XPq3uhvz+MvocsOcqa/nqViLsWgcCBdgwPTQvP7NWwV/O+iu2Fhn7KMCpawuRBizkaU3+/4OMaxiLzKBxTZw== 
+ --destination '$web' --source ./
 ```
 
 - Set working directory to ```$(System.DefaultWorkingDirectory)/$(Build.BuildId)/dist```
