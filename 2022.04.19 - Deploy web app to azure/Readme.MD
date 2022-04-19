@@ -120,3 +120,22 @@ Example: az storage blob upload-batch --account-name meetingsweb --account-key X
 ```
 
 - Set working directory to ```$(System.DefaultWorkingDirectory)/$(Build.BuildId)/dist```
+
+## Debug
+
+### Check artifacts
+If we encounter an issues we should validate our pipelines. First we should check if build is generating correct package. In the each build pipeline we have information from which commit build was triggered and what artifacts had been published
+
+![Script](Images/Artifacts.png)
+
+Next in the Agent job we are checking logs
+
+![Script](Images/AgentJob.png)
+
+In he extract files we are validating if files had been exctracted 
+
+![Script](Images/ExtractedFiles.png)
+
+And in the AzureCLI we are validating if files had been pushed to server
+
+![Script](Images/AzureCLIPush.png)
