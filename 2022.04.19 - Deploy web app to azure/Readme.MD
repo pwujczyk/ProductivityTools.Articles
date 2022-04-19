@@ -94,7 +94,7 @@ steps:
 - Add artifact (what was build from build step)
 - Enable continuos deployment 
 
-![Enable continuos deployment]("Images/EnableContinuosDeployment.png")
+![Enable continuos deployment](Images/EnableContinuosDeployment.png)
 
 - Chose agent job and choose Agent (linux)
 - Add new task
@@ -114,9 +114,11 @@ steps:
 ![Script](Images/Script.png)
 
 ```
-az storage blob upload-batch — account-name STORAGE_ACCOUNT_NAME account-key STORAGE_ACCOUNT_KEY — destination ‘$web’ — source ./
+az storage blob upload-batch — account-name STORAGE_ACCOUNT_NAME
+ account-key STORAGE_ACCOUNT_KEY — destination ‘$web’ — source ./
 
-Example: az storage blob upload-batch --account-name meetingsweb --account-key XPq3uhvz+MvocsOcqa/nqViLsWgcCBdgwPTQvP7NWwV/O+iu2Fhn7KMCpawuRBizkaU3+/4OMaxiLzKBxTZw== --destination '$web' --source ./
+Example: az storage blob upload-batch --account-name meetingsweb
+ --account-key XPq3uhvz+MvocsOcqa/nqViLsWgcCBdgwPTQvP7NWwV/O+iu2Fhn7KMCpawuRBizkaU3+/4OMaxiLzKBxTZw== --destination '$web' --source ./
 ```
 
 - Set working directory to ```$(System.DefaultWorkingDirectory)/$(Build.BuildId)/dist```
