@@ -13,7 +13,7 @@
 # Deploy web app to azure
 
 <!--og-image-->
-![](Images/OAuth.png)
+![](Images/Deploy.jpg)
 
 This tutorial shows how to publish web application to the azure devops.
 
@@ -24,15 +24,15 @@ This tutorial shows how to publish web application to the azure devops.
 - Create new resource group
 - Create storage account
 
-![Create a storage account](./Images/CreateSTorageAccount.png)
+![Create a storage account](Images/CreateSTorageAccount.png)
 
 - Enable static website
 
-![Enable static website](./Images/EnableStaticWebsite.png)
+![Enable static website](Images/EnableStaticWebsite.png)
 
 - Copy Key
 
-![Copy key](./Images/CopyKey.png.png)
+![Copy key](Images/CopyKey.png)
 
 ## Create pipeline
 
@@ -42,10 +42,10 @@ This tutorial shows how to publish web application to the azure devops.
 - Node with react
 
 ```yaml
-# Node.js with React
-# Build a Node.js project that uses React.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+## Node.js with React
+## Build a Node.js project that uses React.
+## Add steps that analyze code, save build artifacts, deploy, and more:
+## https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
 - master
@@ -94,24 +94,24 @@ steps:
 - Add artifact (what was build from build step)
 - Enable continuos deployment 
 
-![Enable continuos deployment ](./Images/EnableContinuosDeployment.png)
+![Enable continuos deployment]("Images/EnableContinuosDeployment.png")
 
 - Chose agent job and choose Agent (linux)
 - Add new task
 
-![AddNewTask](./Images/AddNewTask.png)
+![AddNewTask](Images/AddNewTask.png)
 
 - Extract files
    - Archive file patterns */$(Build.BuildId).zip
    - Destination folder: $(Build.DefaultWorkingDirectory)/$(Build.BuildId)
 - Add Azure CLI
 
-![Azure CLI](./Images/AzureCLI.png)
+![Azure CLI](Images/AzureCLI.png)
 
 - script type Powershell if windows, shell if linux
 - script location inline
 
-![Script](./Images/Script.png)
+![Script](Images/Script.png)
 
 ```
 az storage blob upload-batch — account-name STORAGE_ACCOUNT_NAME account-key STORAGE_ACCOUNT_KEY — destination ‘$web’ — source ./
