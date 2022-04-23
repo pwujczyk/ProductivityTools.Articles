@@ -1,4 +1,3 @@
-
 <!--Category:Article--> 
  <p align="right">
     <a href="http://productivitytools.tech/oauth-clientcredentials/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
