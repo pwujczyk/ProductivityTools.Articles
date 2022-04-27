@@ -9,7 +9,7 @@
     </a>
 </p>
 
-# Deploy python app app to cloud run
+# Deploy python app app to cloud run from git repository
 
 <!--og-image-->
 ![](Images/Deploy.jpg)
@@ -18,6 +18,60 @@ This tutorial shows how to publish web application to the azure devops.
 
 <!--more-->
 
+Let us assume that we have the simplest python application.
+
+main.py
+```python
+def print_hi(name):
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+if __name__ == '__main__':
+    print_hi('PyCharm')
+```
+app.py
+```python
+from flask import Flask
+from flask_restful import Api
+
+from Resources.CardResource import CardResource
+
+def create_app():
+    app=Flask(__name__)
+    register_resources(app)
+    return app
+
+def register_resources(app):
+    api=Api(app)
+    api.add_resource(CardResource, '/Card')
+
+if __name__=="__main__":
+    app=create_app()
+    app.run(port=5000,debug=True)
+```
+Card resource
+```python
+from flask import request
+from flask_restful import Resource
+from http import HTTPStatus
+
+class CardResource(Resource):
+    def get(self):
+        return {'data':'pawel'}, HTTPStatus.OK
+```
+
+requirements.txt
+```txt
+Flask==2.0.1
+httpie==1.0.2
+Flask-RESTful==0.3.9
+Flask-SQLAlchemy==2.5.1
+Flask-Migrate==2.5.2
+psycopg2-binary==2.9.3
+passlib==1.7.1
+```
+
+Let us add cloudbuild.yaml file with the content
+
 ```yml
 steps:
 # Install dependencies
@@ -25,6 +79,19 @@ steps:
   entrypoint: pip
   args: ["install", "-r", "requirements.txt", "--user"]
 ```
+
+## Cloud build
+Go to Cloud build in the console. Enable API and ceate new Activator.
+
+![New activator](Images/NewActivator.png)
+
+Run it
+![Run cloud run](Images/RunCloudBuild.png)
+
+
+Go to history and validate the step
+
+![History](Images/History.png)
 
 ## Build step
 
