@@ -18,6 +18,8 @@ This tutorial shows how to publish web application to the azure devops.
 
 <!--more-->
 
+## Application
+
 Let us assume that we have the simplest python application.
 
 main.py
@@ -86,6 +88,7 @@ Go to Cloud build in the console. Enable API and ceate new Activator.
 ![New activator](Images/NewActivator.png)
 
 Run it
+
 ![Run cloud run](Images/RunCloudBuild.png)
 
 
@@ -126,4 +129,34 @@ Please remember the path of our container repository. We will need it **us-centr
     - image - name of the image, could be anything
     - ${SHORT_SHA} - part after : is a tag which will help us identify the image, here is commit sha
 
+Go to Cloud run and valide if it is working
 
+![Run cloud run](Images/RunCloudBuild.png)
+
+As we can see two steps finished with sucess.
+
+![Two steps working](Images/TwoSteps.png)
+
+Until now we restored requirements, and we build the application. Now we need to store it into **Artifact Registry**
+
+### Artifact Registry
+
+We already enabled the API. Let us add new step to our yaml file. We are using the same image ('gcr.io/cloud-builders/docker') to invoke command. Our command is **push** as a parameter we are giving name of the image which we build. We are omitting the sha part as it is only a tag (metadata) to the file.
+ 
+```yaml
+# Docker push to Google Artifact Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push',  'us-central1-docker.pkg.dev/${PROJECT_ID}/apiimage/image']
+```
+
+Let us again run the workflow. 
+
+![Three steps](Images/threesteps.png)
+
+After sucessfull invocation go to **Artifact Registry** and check if you have your image there.
+
+![Image](Images/Image.png)
+
+When you click on it, you can see the versions of the images. In the **Tag** column we have the sha of commit
+
+![Versions](Images/Versions.png)
