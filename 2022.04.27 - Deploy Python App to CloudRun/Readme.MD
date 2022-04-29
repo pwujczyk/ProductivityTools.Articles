@@ -160,3 +160,16 @@ After sucessfull invocation go to **Artifact Registry** and check if you have yo
 When you click on it, you can see the versions of the images. In the **Tag** column we have the sha of commit
 
 ![Versions](Images/Versions.png)
+
+run.services.get
+
+ [209178581855@cloudbuild.gserviceaccount.com] does not have permission to access namespaces instance [pttechbricksapi-347809] (or it may not exist): Permission 'iam.serviceaccounts.actAs' denied on service account 209178581855-compute@developer.gserviceaccount.com (or it may not exist).
+
+
+ https://stackoverflow.com/questions/56068870/permission-error-when-trying-to-deploy-to-google-cloud-run
+
+
+    app.run(port=5000,host='0.0.0.0',debug=True)
+
+    import os
+    port=int(os.environ.get("PORT", 8080))
