@@ -12,7 +12,7 @@
 # Deploy python app app to cloud run from git repository
 
 <!--og-image-->
-![](Images/ogimage.jpg)
+![](Images/OGImage.jpg)
 
 This tutorial shows how to publish python web application to the **Cloud Run** using **Cloud Build**.
 
