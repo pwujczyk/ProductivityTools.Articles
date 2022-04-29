@@ -12,9 +12,9 @@
 # Deploy python app app to cloud run from git repository
 
 <!--og-image-->
-![](Images/Deploy.jpg)
+![](Images/ogimage.jpg)
 
-This tutorial shows how to publish web application to the azure devops.
+This tutorial shows how to publish python web application to the **Cloud Run** using **Cloud Build**.
 
 <!--more-->
 
@@ -22,18 +22,13 @@ This tutorial shows how to publish web application to the azure devops.
 
 Let us assume that we have the simplest python application.
 
-main.py
-```python
-def print_hi(name):
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+### app.py
+Please notice the ``app.run`` line. After deploying app to **Cloud Run** GCP performs health check on the port provided in the GCP config so you need to open app on this port. The easiest way to do it is to read the GCP configuration.
 
-if __name__ == '__main__':
-    print_hi('PyCharm')
-```
-app.py
 ```python
 from flask import Flask
 from flask_restful import Api
+import os
 
 from Resources.CardResource import CardResource
 
@@ -48,9 +43,9 @@ def register_resources(app):
 
 if __name__=="__main__":
     app=create_app()
-    app.run(port=5000,debug=True)
+    app.run(port=int(os.environ.get("PORT", 8080)),host='0.0.0.0',debug=True)
 ```
-Card resource
+### Card resource
 ```python
 from flask import request
 from flask_restful import Resource
@@ -61,25 +56,31 @@ class CardResource(Resource):
         return {'data':'pawel'}, HTTPStatus.OK
 ```
 
-requirements.txt
+### requirements.txt
 ```txt
 Flask==2.0.1
 httpie==1.0.2
 Flask-RESTful==0.3.9
-Flask-SQLAlchemy==2.5.1
-Flask-Migrate==2.5.2
-psycopg2-binary==2.9.3
-passlib==1.7.1
 ```
 
 Let us add cloudbuild.yaml file with the content
 
 ```yml
 steps:
-# Install dependencies
 - name: python
   entrypoint: pip
   args: ["install", "-r", "requirements.txt", "--user"]
+```
+
+### Docker fle
+```
+FROM python:3.10-slim
+ENV PYTHONUNBUFFERED True
+ENV APP_HOME /app
+WORKDIR $APP_HOME
+COPY . ./
+RUN pip install --no-cache-dir -r requirements.txt
+CMD ["python", "app.py"]
 ```
 
 ## Cloud build
@@ -165,11 +166,27 @@ run.services.get
 
  [209178581855@cloudbuild.gserviceaccount.com] does not have permission to access namespaces instance [pttechbricksapi-347809] (or it may not exist): Permission 'iam.serviceaccounts.actAs' denied on service account 209178581855-compute@developer.gserviceaccount.com (or it may not exist).
 
+## Deploy to Cloud Run
 
- https://stackoverflow.com/questions/56068870/permission-error-when-trying-to-deploy-to-google-cloud-run
 
+```yaml
+- name: google/cloud-sdk
+  args: [ 'gcloud', 'run', 'deploy', 'mycl-${SHORT_SHA}',
+          '--image=us-central1-docker.pkg.dev/${PROJECT_ID}/apiimage/image:${SHORT_SHA}',
+          '--region', 'us-central1', '--platform', 'managed',
+          '--allow-unauthenticated' ]
+```
+If all steps will finish with sucess,
+![CloudBuildSuccess](Images/CloudBuildSuccess.png)
 
-    app.run(port=5000,host='0.0.0.0',debug=True)
+you should see the new app in the **Cloud Run**
 
-    import os
-    port=int(os.environ.get("PORT", 8080))
+![Cloud Run](Images/CloudRun.png)
+
+### Debbuging
+The last step was most difficult for me if you face **Permission "run.services.get" denied on resource ** validate if you have correct permissions in the **Settings** enabled.
+
+![Settings](Images/Settings.png)
+
+I also used this [link](https://stackoverflow.com/questions/56068870/permission-error-when-trying-to-deploy-to-google-cloud-run) but I do not think it is necessary.
+
