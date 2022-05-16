@@ -117,7 +117,7 @@ Please remember the path of our container repository. We will need it **us-centr
 ### Build step
 
 ```yml
-# Docker Build
+## Docker Build
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t',
          'us-central1-docker.pkg.dev/${PROJECT_ID}/apiimage/image:${SHORT_SHA}', '.']
@@ -145,7 +145,7 @@ Until now we restored requirements, and we build the application. Now we need to
 We already enabled the API. Let us add new step to our yaml file. We are using the same image ('gcr.io/cloud-builders/docker') to invoke command. Our command is **push** as a parameter we are giving name of the image which we build. We are omitting the sha part as it is only a tag (metadata) to the file.
  
 ```yaml
-# Docker push to Google Artifact Registry
+## Docker push to Google Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push',  'us-central1-docker.pkg.dev/${PROJECT_ID}/apiimage/image']
 ```
@@ -188,5 +188,7 @@ The last step was most difficult for me if you face **Permission "run.services.g
 
 ![Settings](Images/Settings.png)
 
-I also used this [link](https://stackoverflow.com/questions/56068870/permission-error-when-trying-to-deploy-to-google-cloud-run) but I do not think it is necessary.
+Additional resources
+- I also used this [link](https://stackoverflow.com/questions/56068870/permission-error-when-trying-to-deploy-to-google-cloud-run) but I do not think it is necessary.
+- [GCP doc](https://cloud.google.com/build/docs/building/build-python)
 
