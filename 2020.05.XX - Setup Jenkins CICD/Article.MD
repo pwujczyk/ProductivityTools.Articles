@@ -24,6 +24,10 @@ To use Jenkinsfile chose **Pipeline** project type
 
 ![Pipeline script from SCM](Images/PipelineType.png)
 
+### Github project
+![](Images/2022-12-21-10-17-18.png)
+
+
 #### Jenkins pipeline configuration
 
 In the Pipeline chose **Pipeline script from SCM** and fill couple fields as showed on the picture below. From this point you can invoke job on jenkins and job should download jenkins file, and perform actions in the pipeline file.
