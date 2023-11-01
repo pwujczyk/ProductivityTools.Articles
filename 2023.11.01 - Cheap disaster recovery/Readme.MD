@@ -51,11 +51,53 @@ On the server I have echo method
 [Route("echo")]
 public string echo(string name)
 {
-    return $"Welcome request performed at {DateTime.Now} with param {name} on server {System.Environment.MachineName} to Application Transfers";
+    return $"Welcome request performed at {DateTime.Now} with"+
+    "param {name} on server {System.Environment.MachineName} to Application Transfers";
 }
 ```
 
+## Server validaton 
+
+I have powershell script that performs call to each server separately (to each port)
 
 
+```powershell
+function Request {
+	[cmdletbinding()]
+	param([string]$address)
+
+	Write-Output "Performing request to $address"
+	$r = Invoke-WebRequest $address
+	if ($r.StatusCode -eq 200) {
+		Write-Host "Request to $address finished with $($r.StatusCode)" -ForegroundColor Green
+		Write-Host $r.Content;
+	}
+	else {
+		Write-Host "Request to $address finished with $($r.StatusCode)" -ForegroundColor Red
+		Write-Host $r
+	}
+}
+
+Request "https://meetings.productivitytools.top:8090/Meeting/echo?name=pawel"
+Request "https://meetings.productivitytools.top:8091/Meeting/echo?name=pawel"
+```
+
+## Updating binaries
+
+I defined two webhooks in github 
+
+![](Images/2023-11-01-16-20-16.png)
+
+Each one points to the same url but different port:
+
+- http://jenkinswebhook.productivitytools.top:8081/github-webhook/
+- http://jenkinswebhook.productivitytools.top:8082/github-webhook/
+
+This allows me to invoke two build processes if I do any commit.
 
 
+## Database synchronization
+
+I am using only one instance of the server, the second one is just waiting. If the primary one will die, I should be able to quickly switch to the backup one.
+
+But for this I need to have database in sync. To do this I am using SQL transactional replication (I also described it on this blog)
