@@ -1,10 +1,10 @@
 <!--Category:Article,Azure--> 
- <p align="right">
-    <a href="http://productivitytools.tech/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
-    <a href="https://github.com/pwujczyk/ProductivityTools.Articles"><img src="Images/Header/Github_border_40px.png" /></a>
+ <p align='right'>
+    <a href='http://productivitytools.tech/'><img src='Images/Header/ProductivityTools_green_40px_2.png' /><a> 
+    <a href='https://github.com/pwujczyk/ProductivityTools.Articles'><img src='Images/Header/Github_border_40px.png' /></a>
 </p>
-<p align="center">
-    <a href="http://productivitytools.tech/">
+<p align='center'>
+    <a href='http://productivitytools.tech/'>
         <img src='Images/Header/LogoTitle_green_500px.png' />
     </a>
 </p>
@@ -41,9 +41,9 @@ def register_resources(app):
     api=Api(app)
     api.add_resource(CardResource, '/Card')
 
-if __name__=="__main__":
+if __name__=='__main__':
     app=create_app()
-    app.run(port=int(os.environ.get("PORT", 8080)),host='0.0.0.0',debug=True)
+    app.run(port=int(os.environ.get('PORT', 8080)),host='0.0.0.0',debug=True)
 ```
 ### Card resource
 ```python
@@ -69,7 +69,7 @@ Let us add cloudbuild.yaml file with the content
 steps:
 - name: python
   entrypoint: pip
-  args: ["install", "-r", "requirements.txt", "--user"]
+  args: ['install', '-r', 'requirements.txt', '--user']
 ```
 
 ### Docker fle
@@ -80,7 +80,7 @@ ENV APP_HOME /app
 WORKDIR $APP_HOME
 COPY . ./
 RUN pip install --no-cache-dir -r requirements.txt
-CMD ["python", "app.py"]
+CMD ['python', 'app.py']
 ```
 
 ## Cloud build
@@ -184,7 +184,7 @@ you should see the new app in the **Cloud Run**
 ![Cloud Run](Images/CloudRun.png)
 
 ### Debbuging
-The last step was most difficult for me if you face **Permission "run.services.get" denied on resource ** validate if you have correct permissions in the **Settings** enabled.
+The last step was most difficult for me if you face **Permission 'run.services.get' denied on resource ** validate if you have correct permissions in the **Settings** enabled.
 
 ![Settings](Images/Settings.png)
 
