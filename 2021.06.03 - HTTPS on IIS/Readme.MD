@@ -19,6 +19,10 @@ Setup SSL certificate on IIS can be cheap and easy.
 
 <!--more-->
 
+## Remarks
+- If binding has hostname the default localhost:8090/Controller/Method stop working and instead hostname.productivitytools.top starts work
+- wacs validation is performed on the port 80, so you need to have a rule to forward it to the server and port needs to be opened
+
 ## IIS
 Create new website on the IIS with the http binding. Remember to add proper host name.
 
