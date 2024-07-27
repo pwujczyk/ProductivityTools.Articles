@@ -31,12 +31,22 @@ password: bitnami
 /opt/bitnami/nginx/conf.default/nginx.conf
 
 ```
+docker ps
+docker cp eb9594e54f41:/opt/bitnami/nginx/conf/nginx.conf .
+docker cp nginx.conf eb9594e54f41:/opt/bitnami/nginx/conf/nginx.conf
+```
+
+```
+http {
+	client_max_body_size 400M;
+}
+
 server {
     client_max_body_size 100M;
     ...
 }
 ```
-
+//below ot necesary
 Plugin:  WPCode – Insert Headers and Footers + Custom Code Snippets – WordPress Code Manager
 ```
 @ini_set( 'upload_max_size' , '204M' );
@@ -51,5 +61,6 @@ https://stackoverflow.com/questions/44741514/nginx-error-client-intended-to-send
 - /opt/bitnami/apps/wordpress/htdocs/wp-content/themes
 - /bitnami/wordpress/wp-content/themes
 
+-----------------------------------------
 
 
