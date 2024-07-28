@@ -23,19 +23,23 @@ user: user
 password: bitnami
 
 # plugins
-- All-in-One WP Migration
+- UpdraftPlus - Backup/Restore
 - Increase Maximum Upload File Size | Increase Execution Time
 
 ## 413 Request Entity Too Large
+Configuration is placed in those files
+But maybe this won't be needed for the undraftPlus plugin
+
 /opt/bitnami/nginx/conf/nginx.conf
 /opt/bitnami/nginx/conf.default/nginx.conf
 
+To mitigate the error we can change the first one. Copy the file to the disk
 ```
 docker ps
 docker cp eb9594e54f41:/opt/bitnami/nginx/conf/nginx.conf .
 docker cp nginx.conf eb9594e54f41:/opt/bitnami/nginx/conf/nginx.conf
 ```
-
+Add the lines and copy back
 ```
 http {
 	client_max_body_size 400M;
@@ -45,19 +49,41 @@ server {
     client_max_body_size 100M;
     ...
 }
-```
-//below ot necesary
-Plugin:  WPCode – Insert Headers and Footers + Custom Code Snippets – WordPress Code Manager
-```
-@ini_set( 'upload_max_size' , '204M' );
-@ini_set( 'post_max_size', '204M');
-@ini_set( 'max_execution_time', '400' );
-```
-/opt/bitnami/wordpress/wp-includes/functions.php
 
+```
+Next copy data with the plugin. 
+Plugin does not copy everything. For example it restores the plugins but you need to activate and configure it:
 
-https://stackoverflow.com/questions/44741514/nginx-error-client-intended-to-send-too-large-body
+## Ajax Load more
+In the templates add:
+```
+<article class="post">
+						<p class="article-category">
+							<?php
+								$categories	=	get_the_category();
+								$separator	=	",	";
+								$output	=	'Category: ';
+								if($categories){
+									foreach($categories	as	$category){
+										$output	.=	'<a	href="'.get_category_link($category->term_id).'">'.
+										$category->cat_name.'</a>'.$separator;
+									}
+								}
+							echo trim($output,	$separator);
+							?>
+						</p>
+
+						<h3>
+							<a href="<?php the_permalink(); ?>">
+								<?php the_title();?>
+							</a>
+						</h3>
+						<?php the_content(); ?>
+					</article>
+```
+
 ## Theme
+
 - /opt/bitnami/apps/wordpress/htdocs/wp-content/themes
 - /bitnami/wordpress/wp-content/themes
 
