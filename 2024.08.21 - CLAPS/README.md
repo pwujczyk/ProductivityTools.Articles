@@ -1,0 +1,46 @@
+# CLAPS
+
+<!--more-->
+
+
+Open directory in the VS code and install CLASP
+```
+npm install -g @google/clasp
+clasp -v
+```
+
+Enable API for google scripts:
+
+https://script.google.com/home/usersettings
+
+![img](./Images/Settings.png)
+
+Copy project ID (1HVy5GD0Y4-WFLL5Zoxprk4uT4tKuepQ0vZJIJbPZeUVyVLOf-Ou4D-af)
+
+Login to appscripts:
+```
+clasp login
+```
+
+```
+npm init
+clasp clone "1HVy5GD0Y4-WFLL5Zoxprk4uT4tKuepQ0vZJIJbPZeUVyVLOf-Ou4D-af"  --rootDir src
+```
+After clone .clasp.json will be placed in the /src dir. Move it to the main directory.
+
+After changing code
+
+```
+clasp push
+```
+![](Images/FilesStructure.png)
+
+Additional
+```
+clasp pull
+```
+
+Watch
+```
+clasp push --w
+```
