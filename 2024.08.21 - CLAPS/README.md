@@ -40,7 +40,14 @@ Additional
 clasp pull
 ```
 
-Watch
+## Watch
 ```
 clasp push --w
+```
+
+## Autocomplete
+
+[link](https://github.com/google/clasp/blob/master/docs/typescript.md)
+```
+npm i -D @types/google-apps-script
 ```
