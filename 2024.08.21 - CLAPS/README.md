@@ -51,3 +51,17 @@ clasp push --w
 ```
 npm i -D @types/google-apps-script
 ```
+
+
+## Debug
+https://github.com/google/clasp/blob/master/docs/run.md
+- create gcp project
+- ``` clasp setting projectId <ProjectID> ```
+- https://console.cloud.google.com/apis/credentials/consent?project=ptappscript
+- Variables
+  - Application name: PTAppScriptClaps
+- casp open
+
+![](Images/changeProject.png)
+
+clasp open --creds
