@@ -65,3 +65,18 @@ https://github.com/google/clasp/blob/master/docs/run.md
 ![](Images/changeProject.png)
 
 clasp open --creds
+
+```
+{
+  "timeZone": "Europe/Warsaw",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/drive.readonly"
+  ]
+  
+}
+```
+
