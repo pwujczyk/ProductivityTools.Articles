@@ -1,6 +1,6 @@
 # Passbolt
 
-Pasbolt is open source password manager. It has integration with browser, android. You can also share the passwords between people.
+Passbolt is open source password manager. It has integration with browser, android. You can also share the passwords between people.
 
 <!--more-->
 
@@ -8,6 +8,7 @@ Docker installation is difficult. I failed to do it twice. So I tried native dep
 [Docker tutorial](https://www.passbolt.com/docs/hosting/install/ce/ubuntu/)
 
 
+Ubuntu configuration [link](https://www.passbolt.com/docs/hosting/install/ce/ubuntu/)
 ## Firewall configuration
 
 Often I failed on the firewall configuration. I did not open https 443 port even I forced application to use https. Remember also to open ports on your router if required.
@@ -79,4 +80,18 @@ To find the config use command ```find . -name "nginx-passbolt.conf"```
 Restart nginx:
 ```    
 root@T460Ubuntu1:/etc/nginx/sites-available# sudo /etc/init.d/nginx stop
+```
+
+## refresh the SSL
+
+On the router port 80 needs to point to the ubuntuserver 
+
+![](Images/20241024211837.png)
+
+Passbolt is also enabled (but not sure if require)
+
+![](Images/20241024211910.png)
+
+```bash
+sudo certbort renew
 ```
