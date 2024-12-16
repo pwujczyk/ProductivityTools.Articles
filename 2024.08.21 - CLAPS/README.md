@@ -80,3 +80,6 @@ clasp open --creds
 }
 ```
 
+## Direct invocation
+C:\Users\pwujczyk\AppData\Roaming\npm\clasp.cmd pull
+
