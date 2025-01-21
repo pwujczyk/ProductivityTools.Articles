@@ -48,3 +48,12 @@ After couple next obvious steps if DNS and IIS is correctly setup, we should see
 Go to IIS and open Bindings. You should see new binding created. You can change the port of it to what you would like, and remove the http.
 
 ![PortChange](Images/PortChange.png)
+
+
+# Refresh
+
+wacs needs to have port 80 forwarded. But on the daily basis port 80 could be used by someone else.
+
+So when inactive wacs should have something else assigned
+
+![](Images/20241103074346.png)
