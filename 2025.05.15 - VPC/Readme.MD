@@ -93,5 +93,20 @@ VPC network peering
 
 
 We have two options to share the network
-- Shared VPC - inside organizatoin
-- Netwrok peering - across organizatoin
+- Shared VPC - inside organization
+- Netwrok peering - across organization
+
+#### Migration VM from one VPC to another
+- VM must be stopped
+- VM cannot be part of the MIG
+- VM stays in the same zone
+ 
+ ### Network Security Learning Path > Networking in Google Cloud: Fundamentals > Network Monitoring and Logging
+
+ Instal Apache
+ ```
+ sudo apt-get udpate
+ sudo apt-get install apache2 -y 
+ echo '<!doctype html><html><body><h1>Hello World!</h1></body></html>' | sudo tee /var/www/html/index.html
+ for ((i=1;i<=50;i++)); do curl $MY_SERVER; done
+ ```
