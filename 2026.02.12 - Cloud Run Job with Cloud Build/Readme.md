@@ -1,5 +1,6 @@
 # Set Cloud build with Cloud run Job function 
 
+## Application
 Cloud Run Job is a simple console program application.
 
 ```
@@ -21,9 +22,11 @@ Console.WriteLine("Job completed successfully.");
 Environment.Exit(0);
 ```
 
-There is no option to deploy application automatically after code push similar to the cloud run function (http). To do that Cloud build with the yaml needs to be used.
+To deploy application we will need ```cloudbuild.yaml``` file
+
 
 ## Cloud build 
+There is no option to deploy application automatically after code push similar to the cloud run function (http). To do that Cloud build with the yaml needs to be used.
 
 ### Repositories 2nd generation
 
@@ -36,3 +39,8 @@ Create host connection.
 Link repository
 
 ![](2026-02-12-17-40-23.png)
+
+Craete trigger
+
+
+![](2026-02-12-17-46-38.png)
