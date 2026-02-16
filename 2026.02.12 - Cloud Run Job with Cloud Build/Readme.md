@@ -22,7 +22,9 @@ Console.WriteLine("Job completed successfully.");
 Environment.Exit(0);
 ```
 
-To deploy application we will need ```cloudbuild.yaml``` file
+To deploy application we will need ```cloudbuild.yaml``` file to be placed in the main directory of the application.
+
+
 
 
 ## Cloud build 
