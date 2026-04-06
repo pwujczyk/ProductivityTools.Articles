@@ -20,8 +20,19 @@ Go to the bucket details and Grand access to the special Service account checked
 Execute command:
 ```
 gcloud config set project ptplacesprod
-gcloud firestore export gs://firestore-migration-places/backup --collection-ids=Places
+gcloud firestore export gs://firestore-migration-places/backup 
 ```
+add ```--collection-ids=Places`` if you want
+
 Validate if bucket contains data
 
 ![bucket-validation](./images/bucket-validation.png)
+
+validate if the account of the target project has **Storage Admin** permissions
+
+
+The path needs to poin to the directory with the ```backup.overall_export_metadata``` file
+```
+gcloud config set project ptprojectsweb
+gcloud firestore import gs://firestore-migration-places/backup --database=places
+```
